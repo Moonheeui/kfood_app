@@ -1,0 +1,194 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-image: url(../images/korea.jpg) !important;
+    background-size: cover;
+    background-position: center;
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+}
+
+.container {
+    max-width: 800px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    transition: .3s;
+}
+
+/* header & nav */
+header {
+    width: 100vw;
+    height: 80px;
+    background: #000;
+    opacity: 0.9;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+header .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-list {
+    display: inline-flex;
+    list-style: none;
+    align-items: center;
+    gap: 40px;
+}
+
+.navbar img{
+    height: 55px;
+    width: 55px;
+}
+
+.nav-list a i {
+    font-size: 25px;
+    color: #fff;
+}
+
+/* main content */
+
+main {
+    display: grid;
+    place-items: center;
+    padding: 4em 1em 1em;
+    text-align: center;
+    margin-top: 3em;
+}
+
+.title {
+    width: 500px;
+    text-align: center;
+    color: white;
+    /* margin-right: 4em; */
+    margin-bottom: 1em;
+}
+
+h2 {
+    font-family: 'Coustard', serif;
+    font-size: 2.4rem;
+    font-weight: 400;
+    margin: 1rem 0;
+}
+
+p {
+    font-size: 1rem;
+    margin-bottom: 2em;
+}
+
+/* styles for map */
+
+#map {
+    width: 800px;
+    height: 500px;
+    background: rgba(216, 216, 216, 1);
+    padding: 1em;
+    display: block;
+}
+
+#location {
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+    padding-top: 2em;
+}
+
+.info{
+    padding: 1em 0 2em;
+}
+
+.resto-info {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: .5rem;
+}
+
+.info h2 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #FCBA04;
+}
+
+.resto-info a i {
+    font-size: 30px;
+    color: #FCBA04;
+    margin-left: 30px;
+}
+
+.resto-info li{
+    margin-bottom: 10px;
+    margin-left: 15px;
+}
+
+@media screen and (max-width: 480px) {
+
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    header {
+        width: 100%;
+        height: 70px;
+    }
+
+    .navbar img {
+        height: 40px;
+        width: 40px;
+    }
+
+    .nav-list {
+        gap: 20px;
+    }
+
+    .nav-list a i {
+        font-size: 18px;
+    }
+
+    main {
+        padding: 2em 1em;
+        margin-top: 2.5em;
+    }
+
+    #map {
+        width: 400px;
+        height: 600px;
+    }
+
+    .resto-info {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: .5em;
+    }
+
+    .info h2 {
+        font-size: 1.2rem;
+    }
+
+    .resto-info a i {
+        font-size: 25px;
+        margin-left: 20px;
+    }
+}

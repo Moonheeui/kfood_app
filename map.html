@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Google Map - Moonhee Kim</title>
+    <link rel="stylesheet" href="css/map.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Coustard&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <script src="https://cdn.jsdelivr.net/gh/snd-lib/snd-lib@v1.1.2/dist/browser/snd.js?kit=01"></script>
+
+    <link rel="stylesheet" href="css/map.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <a href="#" class="logo"><img src="images/kfood-logo-w.png" alt="kfood-logo"></a>
+                <div class="nav-list">
+                    <a href="kfood.html"><i class="fa-solid fa-house-user"></i></a>
+                    <a href="#"><i class="fa-solid fa-map-location-dot"></i></a>
+                    <a href="#"><i class="fa-solid fa-utensils"></i></a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="location">
+            <div class="container">
+                <div class="title">
+                    <h2>K-food MAP</h2>
+                    <p>Healthy food ideas to spice up your meal hour!</p>
+                </div>
+            </div>
+        </section>
+        <article id="map"></article>
+    </main>
+
+    <section class="info">
+        <div class="container">
+            <div class="resto-info">
+                <h2>Daldongnae Korean BBQ<a href="https://www.daldongnaebbq.com/"><i class="fa-solid fa-circle-info"></i></a></h2>
+                <ul>
+                    <li>Address: 1216 Bishop St, Montreal, Quebec H3G 2E3</li>
+                    <li>Phone: (514) 878 - 1111</li>
+                </ul>
+            </div>
+    </div>
+    </section>
+
+    <!-- <footer>
+        <h3>&copy; 2023 Moonhee Kim </h3>
+    </footer> -->
+
+    <script src="js/map.js" async defer></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAOKsQNZ3FsAta_dB9UhkrUv93M9_Xc3jA&callback=initMap"
+        async defer></script>
+
+</body>
+
+</html>

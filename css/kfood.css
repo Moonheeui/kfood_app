@@ -1,0 +1,253 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    background-color: #250001;
+}
+
+.container {
+    max-width: 700px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+main {
+    background-image: url(../images/korea-background1.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    padding: 3rem 1.2rem 5rem 1.2rem;
+}
+
+/* main {
+    padding: 3rem 1.2rem 5rem 1.2rem;
+    max-width: 30em;
+    width: 90%;
+    margin: 0 auto;
+} */
+
+/* main>section {
+    margin: 3rem 0;
+} */
+
+hr {
+    margin: 3rem 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.title img {
+    width: 120px;
+    height: 120px;
+}
+
+.title p{
+    margin-bottom: 30px;
+    font-size: 14px;
+}
+
+p {
+    font-size: 1rem;
+    font-weight: 300;
+    color: #fff;
+    line-height: 2rem;
+    margin: 15px 0;
+}
+
+#display {
+    padding: 1rem;
+    margin: 20px 0;
+    border: 2px solid #250001;
+    background: #fff;
+    opacity: 0.8;
+    position: relative;
+}
+
+#display ul {
+    font-size: 16px;
+}
+
+#display ul li {
+    margin-bottom: 5px;
+    color: black;
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+    line-height: 1.4em;
+}
+
+#display a {
+    background-color: #250001;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 400;
+    color: white;
+    padding: 4px 15px;
+    position: absolute;
+    right: 15px;
+}
+
+#display a:hover {
+    border: 2px solid #FCBA04;
+    background-color: #FCBA04;
+    color: black;
+}
+
+#update-form {
+    margin-bottom: 10px;
+    display: flex;
+    gap: 10px;
+}
+
+#update-form #update {
+    background-color: #FCBA04;
+    border: none;
+    color: black;
+    padding: 8px 15px;
+}
+
+#update-form #update:hover {
+    background-color: #A50104;
+    color: white;
+}
+
+form a,
+form a:link,
+form a:visited {
+    background-color: rgb(66 162 236 / 0.95);
+    color: rgb(240 240 240 / 0.95);
+}
+
+form a:hover,
+form a:focus {
+    background-color: rgb(16 16 16 / 0.95);
+    color: rgb(66 162 236 / 0.95);
+}
+
+form fieldset {
+    padding: 1.5rem;
+    border: 2px solid #A50104;
+    border-radius: 5px;
+    color: white;
+}
+
+form fieldset legend {
+    font-family: 'Coustard', serif;
+    font-size: 1.8rem;
+    font-weight: 400;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+.insert label {
+    margin-bottom: 15px;
+}
+
+input,
+select,
+textarea {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #590004;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+#submit {
+    padding: 10px;
+    display: block;
+    width: auto;
+    background-color: #A50104;
+    border: 2px solid #A50104;
+    color: white;
+}
+
+#submit:hover {
+    background-color: #0D1282;
+    border: 2px solid #0D1282;
+}
+
+.match {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#map {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 25px;
+}
+
+#map .map-btn {
+    padding: 5px;
+    width: auto;
+    background: #FCBA04;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    color: black;
+    text-align: center;
+}
+
+#map .map-btn:hover {
+    background-color: #250001;
+    border: 2px solid #250001;
+    color: white;
+}
+
+#map a i {
+    font-size: 25px;
+    color: #A50104;
+    margin-right: 10px;
+}
+
+@media only screen and (max-width: 580px) {
+    input,
+    select,
+    textarea {
+        margin-bottom: 0;
+    }
+
+    #display ul li {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    #display a {
+        position: static;
+    }
+
+    #update-form {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        width: 100%;
+    }
+}

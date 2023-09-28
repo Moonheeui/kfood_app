@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kfood_DB_App</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Coustard&family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script src="https://cdn.jsdelivr.net/gh/snd-lib/snd-lib@v1.1.2/dist/browser/snd.js?kit=01"></script>
+
+    <link rel="stylesheet" href="css/kfood.css">
+
+</head>
+
+<body>
+
+    <!-- <header>
+        <img src="images/kfood-logo-w.png" alt="kfood-logo" width="100px" height="100px">
+        <nav>
+            <a href="#form">Intro</a>
+            <a href="#filter">Map</a>
+            <a href="#display">Recipe</a>
+        </nav>
+    </header> -->
+
+    <main>
+        <section id="intro">
+            <div class="container">
+                <div class="title">
+                    <a href="kfood.html" class="logo"><img src="images/kfood-logo-w.png" alt=""></a>
+                    <p>Healthy food ideas to spice up your meal hour!</p>
+                </div>
+
+                <div class="insert">
+                    <form action="app/insert.php" method="POST" id="insert-form">
+                        <fieldset>
+                            <legend>Your Favourite Korean Food</legend>
+                            <p>
+                                <label for="full_name">Full Name :</label>
+                                <input type="text" name="full_name" />
+                            </p>
+                            <p>
+                                <label for="mealtime">Meal Time :</label>
+                                <select name="mealtime" id="mealtime">
+                                    <option value="lunch">Lunch</option>
+                                    <option value="dinner">Dinner</option>
+                                </select>
+                            </p>
+                            <p>
+                                <label for="menu">Menu :</label>
+                                <select name="menu" id="menu">
+                                    <option value="Korean Kimbap">Korean Kimbap</option>
+                                    <option value="Noodle Ramen">Noodle Ramen</option>
+                                    <option value="Frided Chicken">Fried Chicken</option>
+                                    <option value="Korean BBQ">Korean BBQ</option>
+                                </select>
+                            </p>
+                            <p class="match">
+                                <label for="submit">Thank you for your information!</label>
+                                <input type="submit" id="submit" name="action" class="snd__celebration" value="SELECT" />
+                            </p>
+                            <p id="map">
+                                <a href="map.html" class="map-btn"><i class="fa-solid fa-map-location-dot"></i>Follow Me</a>
+                            </p>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section class="view">
+            <div class="container">
+                <div id="display"></div>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="js/kfood.js" defer></script>
+
+</body>
+
+</html>
